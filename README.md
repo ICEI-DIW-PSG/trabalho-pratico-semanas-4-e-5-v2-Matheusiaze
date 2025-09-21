@@ -18,11 +18,11 @@ No trabalho dessa semana vamos evoluir o projeto para que a home-page funcione b
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
 
-![Print Desktop](imagens/PrintDesk.png)
+![Print Desktop](imagens/desk.png)
 
 ## Print da versão responsiva com CSS puro [MOBILE] (*)
 
-![Print Mobile](imagens/PrintMoba.png)
+![Print Mobile](imagens/moba.png)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
