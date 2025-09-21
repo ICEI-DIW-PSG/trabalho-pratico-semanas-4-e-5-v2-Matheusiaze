@@ -1,0 +1,470 @@
+/* ---------- ESTILO GERAL ---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #333;
+    width: 100%;
+    color: #fff;
+    padding: auto;
+    text-align: left;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* Menu mobile */
+#menuToggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.bio-artista {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formulário */
+.formulario {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+.formulario input[type="text"] {
+    padding: 10px;
+    border-radius: 150px;
+    border: 1px solid #ccc;
+    width: 700px;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+}
+
+.conteudo {
+    margin: 40px;
+}
+
+ul .menu {
+    margin: 0%;
+}
+
+
+/* Menu lateral */
+nav .menu {
+    width: 100%;
+    /* Deixando o menu mais estreito */
+    padding: 10px;
+    /* Menos espaçamento */
+    display: flex;
+    /* Organizando os links em uma coluna */
+    gap: 10px;
+
+
+}
+
+nav .menu li {
+    list-style: none;
+    margin-left: auto;
+    top: 0;
+    left: 0;
+}
+
+nav .menu li a {
+
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30%;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+nav .menu li a:hover {
+    background-color: #bbb;
+    /* Cor dos links quando passa o mouse */
+}
+
+/* Conteúdo da seção direita */
+.conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Grid das imagens */
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.imgs button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgs img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.imgs h3 {
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: auto;
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* celular */
+@media screen and (max-width: 480px) {
+
+    body {
+        margin: 0%;
+        padding: 0%;
+
+    }
+
+    .cabecalho {
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 1%;
+        width: 100%;
+    }
+
+
+    .header nav {
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu {
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        transition: height 0.4s;
+    }
+
+
+    .menu li {
+        display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+    .menu-icon{
+    display: block;
+    color: white;
+    width: 50px;
+    height: inherit;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    line-height: 60px;
+    z-index: 999;
+}
+.menu-icon i {
+    font-size: 1.7rem;
+}
+
+#menuToggle:checked~label i:nth-child(2) {
+    display: block;
+}
+
+#menuToggle:checked~label i:first-child {
+    display: none;
+}
+
+#menuToggle:not(checked)~label i:first-child {
+    display: block;
+}
+
+#menuToggle:not(:checked)~label i:nth-child(2) {
+    display: none;
+}
+#menuToggle:checked ~ ul{
+   height: 100%;
+}
+
+    /* Menu mobile */
+
+    .cabecalho h1 {
+        margin: 0;
+    }
+
+    .formulario {
+        display: grid;
+        justify-content: flex-start;
+        margin-top: 5px;
+        margin-right: 5%;
+    }
+
+    .formulario input[type="text"] {
+        padding: 10px;
+        border-radius: 150px;
+        border: 1px solid #ccc;
+        width: 65px;
+    }
+
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .grid-fotos {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .imgs img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .rodape {
+        padding: 10px 0;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .cabecalho {
+        padding: 15px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .formulario {
+        display: grid;
+        justify-content: flex-start;
+        margin-top: 15px;
+        margin-right: 10%;
+    }
+
+    .formulario input[type="text"] {
+        padding: 12px;
+        width: 180px;
+    }
+
+    /* Menu lateral */
+     .menu {
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        transition: height 0.4s;
+    }
+
+
+    .menu li {
+        display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+    .menu-icon{
+    display: block;
+    color: white;
+    width: 50px;
+    height: inherit;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    line-height: 60px;
+    z-index: 999;
+}
+
+
+    /* Menu mobile */
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        padding: auto;
+    }
+
+    .grid-fotos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        text-align: center;
+    }
+
+    .imgs img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .rodape {
+        padding: 20px 0;
+    }
+}
+
+/* desktop médio */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .cabecalho {
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .formulario {
+        display: grid;
+        justify-content: flex-start;
+        margin-top: 10px;
+        margin-right: 15%;
+    }
+
+    .formulario input[type="text"] {
+        padding-right: 50%;
+        width: 70%;
+    }
+
+    /* Menu lateral */
+    .menu {
+        align-items: center;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+    }
+
+    .menu li {
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    
+    /* Menu mobile */
+
+    .cabecalho {
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        padding: auto auto;
+    }
+
+    .grid-fotos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        text-align: center;
+    }
+
+    .imgs img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .rodape {
+        padding: 20px 0;
+    }
+
+    /* desktop grande */
+    @media screen and (min-width: 1280px) {
+        .cabecalho {
+            padding: 20px 40px;
+        }
+
+        .formulario input[type="text"] {
+            width: 400px;
+        }
+
+        .menu button {
+            padding: 15px 35px;
+        }
+
+        .grid-fotos {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .imgs img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .rodape {
+            padding: 30px 0;
+        }
+    }
+}

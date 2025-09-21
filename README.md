@@ -11,18 +11,18 @@ No trabalho dessa semana vamos evoluir o projeto para que a home-page funcione b
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Matheus Iaze Mazzoni
+- Matricula: 00900363
+- Proposta de projeto escolhida: Exposição artistica
+- Breve descrição sobre seu projeto: Um site com o intuito de fazer uma exposição de obras de arte e suas informações, para apreciação e estudo das mesmas.
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Print Desktop](imagens/PrintDesk.png)
 
 ## Print da versão responsiva com CSS puro [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Print Mobile](imagens/PrintMoba.png)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
