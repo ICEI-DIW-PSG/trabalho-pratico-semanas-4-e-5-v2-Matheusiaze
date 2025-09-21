@@ -1,0 +1,389 @@
+/* ---------- ESTILO GERAL ---------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #333;
+  color: #fff;
+  padding: auto;
+  text-align: left;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.bio-artista{
+  font-size: 100%;
+}
+
+/* Formulário */
+.formulario {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+
+.formulario input[type="text"] {
+  padding: 10px;
+  border-radius: 150px;
+  border: 1px solid #ccc;
+  width: 700px;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.conteudo {
+  margin: 40px;
+}
+
+/* Menu lateral */
+.menu {
+  width: 350px; /* Deixando o menu mais estreito */
+  background-color: #f4f4f4; /* Cor de fundo do menu */
+  padding: 10px; /* Menos espaçamento */
+  display: flex; /* Usando flexbox */
+  flex-direction: column; /* Organizando os botões em uma coluna */
+  gap: 10px; /* Espaço entre os botões */
+}
+
+.menu button {
+  width: 100%; /* Botões ocupam toda a largura do menu */
+  padding: 8px; /* Botões menores */
+  background-color: #ddd; /* Cor de fundo dos botões */
+  border: none; /* Sem borda */
+  cursor: pointer; /* Aparece o ponteiro do mouse */
+  border-radius: 10px; /* Bordas arredondadas */
+  font-size: 14px; /* Texto menor nos botões */
+  height: 10%;
+  font-size: 100%;
+}
+
+.menu button:hover {
+  background-color: #bbb; /* Cor dos botões quando passa o mouse */
+}
+
+/* Conteúdo da seção direita */
+.conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Grid das imagens */
+.grid-fotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.imgs button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgs img {
+  width: 180px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.imgs h3 {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  padding: auto;
+  background-color: #333;
+  color: #fff;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* celular */
+@media screen and (max-width: 480px) {
+
+body{
+margin: 0%;
+padding: 0%;
+
+}
+
+  .cabecalho {
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1%;
+    width: 100%;
+  }
+
+  .cabecalho h1 {
+    margin: 0;
+  }
+
+  .formulario {
+    display: grid;
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-right: 5%;
+  }
+
+  .formulario input[type="text"] {
+    padding: 10px;
+    border-radius: 150px;
+    border: 1px solid #ccc;
+    width: 65px;
+  }
+/* Menu lateral */
+.menu {
+  width: 400px; /* Deixando o menu mais estreito */
+  background-color: #f4f4f4; /* Cor de fundo do menu */
+  padding: 10px;
+  padding-left: 5%;
+  display: flex; /* Usando flexbox */
+  gap: 10px; /* Espaço entre os botões */
+  padding-bottom: 0%;
+  padding-top: 5%;
+
+}
+.menu button {
+  width: 80%; /* Botões ocupam toda a largura do menu */
+  padding: 8px; /* Botões menores */
+  margin-left: 5%;
+  background-color: #ddd; /* Cor de fundo dos botões */
+  border: none; /* Sem borda */
+  cursor: pointer; /* Aparece o ponteiro do mouse */
+  border-radius: 10px; /* Bordas arredondadas */
+  font-size: 14px; /* Texto menor nos botões */
+}
+
+.menu button:hover {
+  background-color: #bbb; /* Cor dos botões quando passa o mouse */
+}
+
+  .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .grid-fotos {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .imgs img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .rodape {
+    padding: 10px 0;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .cabecalho {
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .formulario {
+    display: grid;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-right: 10%;
+  }
+
+  .formulario input[type="text"] {
+    padding: 12px;
+    width: 180px;
+  }
+
+/* Menu lateral */
+.menu {
+  width: 100%; /* Deixando o menu mais estreito */
+  background-color: #f4f4f4; /* Cor de fundo do menu */
+  padding: 5%; /* Menos espaçamento */
+  display: grid; /* Usando flexbox */
+  gap: 10px; /* Espaço entre os botões */
+  padding-bottom: 0%;
+}
+
+.menu button {
+  width: 90%; /* Botões ocupam toda a largura do menu */
+  padding: 8px; /* Botões menores */
+  background-color: #ddd; /* Cor de fundo dos botões */
+  border: none; /* Sem borda */
+  cursor: pointer; /* Aparece o ponteiro do mouse */
+  border-radius: 10px; /* Bordas arredondadas */
+  font-size: 14px; /* Texto menor nos botões */
+}
+
+.menu button:hover {
+  background-color: #bbb; /* Cor dos botões quando passa o mouse */
+}
+
+  .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+  }
+
+  .grid-fotos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    text-align: center;
+  }
+
+  .imgs img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .rodape {
+    padding: 20px 0;
+  }
+}
+
+/* desktop médio */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .cabecalho {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .formulario {
+    display: grid;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-right: 15%;
+  }
+
+  .formulario input[type="text"] {
+    padding-right: 50%;
+    width: 70%;
+  }
+/* Menu lateral */
+.menu {
+  width: 100%; /* Deixando o menu mais estreito */
+  background-color: #f4f4f4; /* Cor de fundo do menu */
+  padding: 5%; /* Menos espaçamento */
+  display: grid; /* Usando flexbox */
+  gap: 20px; /* Espaço entre os botões */
+  padding-bottom: 0%;
+}
+.menu button {
+  width: 80%; /* Botões ocupam toda a largura do menu */
+  padding: 3%; /* Botões menores */
+  margin-left: 5%;
+  background-color: #ddd; /* Cor de fundo dos botões */
+  cursor: pointer; /* Aparece o ponteiro do mouse */
+  border-radius: 30px; /* Bordas arredondadas */
+  font-size: 100%; /* Texto menor nos botões */
+  height: 5px;
+  text-align: center;
+}
+
+.menu button:hover {
+  background-color: #bbb; /* Cor dos botões quando passa o mouse */
+  width: 100%;
+}
+
+    .cabecalho {
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .conteudo-principal {
+      display: flex;
+      flex-direction: column;
+      padding: auto auto;
+    }
+
+    .grid-fotos {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      text-align: center;
+    }
+
+    .imgs img {
+      width: 100%;
+      height: 250px;
+    }
+
+    .rodape {
+      padding: 20px 0;
+    }
+
+  /* desktop grande */
+  @media screen and (min-width: 1280px) {
+    .cabecalho {
+      padding: 20px 40px;
+    }
+
+    .formulario input[type="text"] {
+      width: 400px;
+    }
+
+    .menu button {
+      padding: 15px 35px;
+    }
+
+    .grid-fotos {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .imgs img {
+      width: 100%;
+      height: 300px;
+    }
+
+    .rodape {
+      padding: 30px 0;
+    }
+  }
+}
