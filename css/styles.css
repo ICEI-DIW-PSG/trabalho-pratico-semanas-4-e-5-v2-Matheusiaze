@@ -72,6 +72,7 @@ body {
   font-size: 14px; /* Texto menor nos botões */
   height: 10%;
   font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu button:hover {
@@ -102,6 +103,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .imgs img {
@@ -113,8 +115,9 @@ body {
 
 .imgs h3 {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 17px;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Rodapé */
