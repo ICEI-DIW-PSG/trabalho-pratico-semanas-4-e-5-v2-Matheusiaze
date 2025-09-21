@@ -11,10 +11,10 @@ No trabalho dessa semana vamos evoluir o projeto para que a home-page funcione b
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Matheus Iaze Mazzoni
+- Matricula: 00900363
+- Proposta de projeto escolhida: Exposição artistica
+- Breve descrição sobre seu projeto: Um site com o intuito de fazer uma exposição de obras de arte e suas informações, para apreciação e estudo das mesmas.
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
 
