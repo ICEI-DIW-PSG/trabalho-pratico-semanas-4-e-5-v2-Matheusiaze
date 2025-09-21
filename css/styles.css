@@ -77,8 +77,7 @@ nav .menu {
     /* Organizando os links em uma coluna */
     gap: 10px;
     /* Espaço entre os itens do menu */
-    top: 0;
-    left: 0;
+
 
 }
 
@@ -96,11 +95,8 @@ nav .menu li a {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 30%;
-    min-width: none;
     width: 100%;
     background-color: #ddd;
-    border: none;
-    cursor: pointer;
     border-radius: 10px;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
